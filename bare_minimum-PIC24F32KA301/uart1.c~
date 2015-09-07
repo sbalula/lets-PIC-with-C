@@ -6,7 +6,6 @@
 #include <string.h>
 
 #include "uart1.h"
-//#include "lcd.h"
 
 
 unsigned int UMODEvalue, U1STAvalue, str_pos1 = -1; //auxiliary UART config variables
@@ -15,7 +14,7 @@ char RXbuffer1[80];
 void init_uart1() {
     U1MODE = 0b1000100000000000;
     U1STA = 0b0000001000000000;
-    U1BRG = 12;
+    U1BRG = 52;
     _U1RXIE = 1;
 }
 

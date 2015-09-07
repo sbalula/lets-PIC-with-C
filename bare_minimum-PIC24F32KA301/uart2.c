@@ -15,7 +15,7 @@ void init_uart2() {
 
     U2MODE = 0b1000100000001000;
     U2STA = 0b0000001000000000;
-    U2BRG = 12;
+    U2BRG = 52;
     _U2RXIE = 1;
     //__C30_UART = 2; //define UART1 as predefined for use with stdio library, printf etc
 

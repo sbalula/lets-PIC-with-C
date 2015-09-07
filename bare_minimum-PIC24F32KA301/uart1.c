@@ -14,7 +14,7 @@ char RXbuffer1[80];
 void init_uart1() {
     U1MODE = 0b1000100000000000;
     U1STA = 0b0000001000000000;
-    U1BRG = 12;
+    U1BRG = 52;
     _U1RXIE = 1;
 }
 
